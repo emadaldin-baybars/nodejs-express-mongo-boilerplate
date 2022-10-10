@@ -1,7 +1,7 @@
 
 const path = require('path');
 const multer = require("multer");
-const {fileURLToPath} = require('url');
+const { fileURLToPath } = require('url');
 
 
 const __filename = fileURLToPath(import.meta.url);
@@ -13,7 +13,7 @@ const storage = multer.diskStorage({
     },
     filename: function (req, file, cb) {
         const uniqueSuffix = Date.now() + '-' + Math.round(Math.random() * 1E9)
-        cb(null, `${file.fieldname}-${uniqueSuffix}.${file.originalname.split('.')[1]}`) 
+        cb(null, `${file.fieldname}-${uniqueSuffix}.${file.originalname.split('.')[1]}`)
     }
 })
 
@@ -23,4 +23,4 @@ const single = multer({ storage: storage }).single("img")
 
 const file = multer({ storage: storage }).single("file")
 
-module.exports = {multiple, single, file}
+module.exports = { multiple, single, file }

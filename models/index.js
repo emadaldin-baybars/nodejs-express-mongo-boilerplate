@@ -17,9 +17,9 @@ const db = mongoose.connect(
         retryWrites: true
     }
 )
-.then(() => console.log('Connected to #bombya_db!'))
-.catch((err) => {
-    console.log(err)
-})
+    .then(() => console.log('Connected to #bombya_db!'))
+    .catch((err) => {
+        console.log(err)
+    })
 
 exports.db = db;

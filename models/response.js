@@ -1,4 +1,4 @@
-function Response(status='', body={}, error={}) {
+function Response(status = '', body = {}, error = {}) {
     return {
         status,
         body,

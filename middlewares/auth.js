@@ -22,7 +22,7 @@ const verifyToken = (req, res, next) => {
       Response("401", {}, Error("401", err.message))
     )
   }
-  
+
   return next();
 };
 

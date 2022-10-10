@@ -8,7 +8,7 @@ const router = express.Router();
 
 //User
 router.get(
-    '/all', 
+    '/all',
     userController.getUsers
 );
 

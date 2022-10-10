@@ -18,6 +18,6 @@ You'll find examples for routes, controllers and models.
 
 The boilerplate got weponized with middlewares for uploading, authintication and authorization.
 
-Also configuered with JSDoc for documenting and Mocha for testing
+Also configuered with **JSDoc** for documenting and **Mocha** for testing
 
-Thanks for using this 😅 🙏🏻
+As long as you here enjoy the ride 😅 🙏🏻 [Kidding]
